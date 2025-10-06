@@ -134,6 +134,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+ALLOWED_HOSTS = [
+    '111.230.32.226',  # 你的服务器 IP 地址
+    'localhost',       # 本地访问
+    '127.0.0.1',       # 本地访问
+    '0.0.0.0',         # 允许所有 IPv4 地址
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
