@@ -16,6 +16,11 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+import os
+
+# 确保 STATIC_ROOT 是一个有效的绝对路径
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # 或者 Path(BASE_DIR) / 'staticfiles'
+
 LOGIN_URL = '/accounts/login/'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
