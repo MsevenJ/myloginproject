@@ -157,3 +157,9 @@ CAPTCHA_IMAGE_SIZE = (150, 50)  # 验证码图片大小
 CAPTCHA_FONT_SIZE = 32          # 验证码字体大小
 CAPTCHA_BACKGROUND_COLOR = '#ffffff'  # 背景颜色
 CAPTCHA_FOREGROUND_COLOR = '#000000'  # 字体颜色
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
