@@ -11,14 +11,14 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-import os
-
-# 项目根目录
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# 确保 STATIC_ROOT 是一个有效的绝对路径
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # 或者 Path(BASE_DIR) / 'staticfiles'
+# import os
+#
+# # 项目根目录
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#
+#
+# # 确保 STATIC_ROOT 是一个有效的绝对路径
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # 或者 Path(BASE_DIR) / 'staticfiles'
 
 LOGIN_URL = '/accounts/login/'
 # Quick-start development settings - unsuitable for production
